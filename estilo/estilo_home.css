@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+:root{
+    --cor1:#F2F2F2;
+    --cor2:#8C8C8C;
+    --cor3:#59595957;
+    --cor4:#40404042;
+    --cor5:#0D0D0D;
+    --cor6:#404040;
+    --cor7:#595959;
+
+
+
+}
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+header{
+    width: 100%;
+    background-image: linear-gradient(to right, var(--cor4),var(--cor2),var(--cor3));
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.425);
+    margin-bottom: 50px;
+    
+}
+header h1 {
+    color: white;
+}
+
+body{
+    background-color: #666666;
+    background-image: url(/imagem/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}        
+
+
+
+.card {
+  width: 50%;
+  height: 200px;
+  background-color: #01030e4d;
+  background-image: linear-gradient(43deg,var(--cor4),var(--cor2),var(--cor3));
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  cursor: pointer;
+  margin: auto;
+}
+
+.card-content {
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.card-content .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.card-content .card-para {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card:hover:before {
+  transform: translateX(-100%);
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card:hover:after {
+  transform: translateX(100%);
+}
+
+
+
+
+/* From Uiverse.io by Randdose */ 
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: white solid 0.15em;
+  border-radius: 0.25em;
+  color: var(--cor2);
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  margin: 40px auto 0 auto;
+}
+
+.button p {
+  z-index: 1;
+}
+
+.button:hover {
+  color: white;
+}
+
+.button:active {
+  border-color: rgb(218, 197, 11);
+}
+
+.button::after, .button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background:black;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.button:hover:before {
+  transform: translateX(-1em);
+}
+
+.button:hover:after {
+  transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: black;
+}
+
+
+
+
+    

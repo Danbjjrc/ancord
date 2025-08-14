@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    width: 100%;
+    background-color: #BF8A49;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.425);
+    
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color: black;
+    font-size: 3vw;
+}
+
+body{
+    background-color:#8C8874;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section{
+    position: relative;
+    
+    }
+
+#meio{
+    
+    
+    max-width: 600px;
+    padding: 10px;
+    background-color: #ffffff85;
+    border-radius: 5px;
+    margin-top: 8%;
+    padding: 20px;
+
+}
+
+#meio >h1{
+    font-size: 2vw;
+    margin-bottom: 15px;
+}
+
+#meio >h2{
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#meio p {
+
+    margin-bottom: 25px;
+    padding: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by Mike11jr */ 
+.btn {
+ padding: 1.1em 2em;
+ background: none;
+ border: 2px solid #fff;
+ font-size: 15px;
+ color: #131313;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.3s;
+ border-radius: 12px;
+ background-color: #ecd448;
+ font-weight: bolder;
+ box-shadow: 0 2px 0 2px #000;
+ margin: auto;
+}
+
+.btn:before {
+ content: "";
+ position: absolute;
+ width: 100px;
+ height: 120%;
+ background-color: #ff6700;
+ top: 50%;
+ transform: skewX(30deg) translate(-150%, -50%);
+ transition: all 0.5s;
+}
+
+.btn:hover {
+ background-color: #4cc9f0;
+ color: #fff;
+ box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+ transform: skewX(30deg) translate(150%, -50%);
+ transition-delay: 0.1s;
+}
+
+.btn:active {
+ transform: scale(0.9);
+}
