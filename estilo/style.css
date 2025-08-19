@@ -161,3 +161,17 @@ p {
   transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 }
 
+#chamada{
+  border-radius: 20px;
+  color: var(--cor1);
+  background-color: rgba(255, 255, 255, 0.116);
+  padding: 30px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+#chamada:hover{
+  background-color: rgba(255, 255, 255, 0.041);
+  padding: 30px;
+  box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.5);
+}
